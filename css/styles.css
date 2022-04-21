@@ -213,13 +213,14 @@ ol {
 	background-color: rgba(0, 0, 0, 0.1);
 	transform: scale(1);
 	opacity: 1;
-	transition:  opacity var(--animation);
+	transition:  opacity var(--animation), transform var(--animation);
 	
 	}
 .backdrop.is-hidden{
 	visibility: hidden;
 		opacity:0;
 		pointer-events: none;
+		transform: scale(2);
 		
 	}
 .modal{
