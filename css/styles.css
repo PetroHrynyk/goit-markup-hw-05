@@ -213,11 +213,12 @@ ol {
 	background-color: rgba(0, 0, 0, 0.1);
 	transform: scale(1);
 	opacity: 1;
-	transition:  opacity var(--animation), transform var(--animation);
+	visibility: visible;
+	transition:  opacity var(--animation), transform var(--animation), visibility var(--animation);
 	
 	}
 .backdrop.is-hidden{
-	visibility: hidden;
+		visibility: hidden;
 		opacity:0;
 		pointer-events: none;
 		transform: scale(2);
@@ -482,7 +483,7 @@ border: 1px solid var(--accent-color);
 	line-height: 1.62;
 	text-align: center;
 	letter-spacing: 0.03em;
-	transition: background-color var(--animation), color var(--animation);
+	transition: background-color var(--animation), color var(--animation), box-shadow var(--animation);
 }
 
 .filter-button:hover,
@@ -507,6 +508,9 @@ border: 1px solid var(--accent-color);
 	flex-basis: calc(100% / 3 - 30px);
 	margin-top: 30px;
 	margin-left: 30px;
+}
+.projects-list-link{
+	transition: box-shadow var(--animation);
 }
 .projects-list-link:hover,
 .projects-list-link:focus{
